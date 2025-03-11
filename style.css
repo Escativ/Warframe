@@ -1,0 +1,273 @@
+body{
+    margin: 0;
+}
+
+    /*Navbar content*/
+
+.navbar{
+    background-color: black;
+    width: 100%;
+    height: 7vw;
+    display: flex;
+}
+.Navcont{
+    color: white;
+    font-size: 1.82vw;
+    margin-left: 3vw;
+    padding-top: 2.60vw;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.divider{
+    background-color: black;
+    width: 100%;
+    height: 7vw;
+}
+
+    /*Main container*/
+
+
+.container {
+    width: 100%;
+    height: 46.5vw;
+    position: relative;
+    background-image: url(https://media.giphy.com/media/xThta6a6qHWE3uUsMM/giphy.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+    /*Warframe logo*/
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.warframe {
+    height: 7.3vw;
+}
+
+
+    /* Info box 1 elements*/
+
+.Infobox1 {
+    position: absolute;
+    background-color: black;
+    border-radius: 10px;
+    width: 18vw;
+    height: 15vw;
+    cursor: pointer;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.box1Cont{
+    color: white;
+    font-size: 1.82vw;
+    position: absolute;
+}
+.box1cont2{
+    visibility: hidden;
+    transition: all 0.2s ease-in;
+    font-size: .01vw;
+}
+
+    /*info box 2 elements*/
+
+.Infobox2 {
+    position: absolute;
+    background-color: black;
+    border-radius: 10px;
+    width: 18vw;
+    height: 15vw;
+    cursor: pointer;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.box2Cont{
+    color: white;
+    font-size: 1.82vw;
+    position: absolute;
+    margin: 1vw;
+}
+.box2cont2{
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+}
+.wiki{
+    color: white;
+    font-size: 1.82vw;
+}
+
+    /*When info boxes are clicked on*/
+
+.active1 {
+    width: 33vw;
+    height: 30vw;
+}
+.active1 .box1Cont {
+    visibility: hidden;
+}
+.active1 .box1cont2{
+    visibility: visible;
+    color: white;
+    margin: 3vw;
+    font-size: 1vw;
+}
+.active2 {
+    width: 33vw;
+    height: 30vw;
+}
+.active2 .box2Cont {
+    visibility: hidden;
+}
+.active2 .box2cont2{
+    visibility: visible;
+    color: white;
+    margin: 3vw;
+}
+
+    /*Container 2*/
+
+.container2{
+    width: 100%;
+    height: 53.5vw;
+    position: relative;
+    background-image: url(https://www-static.warframe.com/uploads/53b7bb2e4ae64030bccf706c6bd5897f.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+    /*Voruna div*/
+
+.voruna{
+    background-color: black;
+    width: 25vw;
+    height: 45vw;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+}
+.Vborder{
+    position: relative;
+    width: 20vw;
+    height: 30vw;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    border: white solid 5px;
+}
+.Vimage{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./Vorunaimg/Voruna.png);
+    position: relative;
+    width: 20vw;
+    height: 30vw;
+    border-radius: 10px;
+}
+.HVoruna{
+    color: white;
+    font-size: 1.82vw;
+    margin-left: 9.5vw;
+    margin-top: 6vw;
+}
+
+    /*Review div*/
+
+.review{
+    background-color: black;
+    width: 25vw;
+    height: 45vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+}
+
+    /*Gauss div*/
+
+.gauss{
+    background-color: black;
+    width: 25vw;
+    height: 45vw;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+}
+.Gimage{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./Gaussimg/Gauss.png);
+    position: relative;
+    width: 20vw;
+    height: 30vw;
+    border-radius: 10px;
+}
+.Gborder{
+    position: relative;
+    width: 20vw;
+    height: 30vw;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    border: white solid 5px;
+}
+.HGauss{
+    color: white;
+    font-size: 1.82vw;
+    margin-left: 10vw;
+    margin-top: 6vw;
+}
+
+
+    /*footer*/
+
+footer{
+    background-color: black;
+    width: 100%;
+    height: 7vw;
+    display: flex;
+}
+.footertext{
+    color: white;
+    font-size: 1.82vw;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
