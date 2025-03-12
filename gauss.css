@@ -22,7 +22,7 @@ a{
 }
 
 .container{
-    height: 39.45vw;
+    height: 39.55vw;
     width: 100%;
     position: relative;
 }
@@ -32,13 +32,13 @@ a{
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(./Gaussimg/Gausspage.png);
-    height: 39.45vw;
+    height: 39.55vw;
     width: 30vw;
     position: absolute;
 }
 .container2{
     background-color: aqua;
-    height: 39.45vw;
+    height: 39.55vw;
     width: 70vw;
     position: absolute;
     margin-left: 30vw;
