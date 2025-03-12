@@ -41,11 +41,11 @@ BuilClose.addEventListener('click', () => {
 // Pop up for about
 
 const about = document.getElementById("about");
-const APop = document.querySelector(".AbPopup");
-const AClose = document.querySelector(".AbClose");
+const APop = document.querySelector(".APopup");
+const AClose = document.querySelector(".AClose");
 
 about.addEventListener('click', () => {
-    AbPop.style.display = "flex";
+    APop.style.display = "flex";
 });
 
 APop.addEventListener('click', (e) => {
@@ -56,4 +56,24 @@ APop.addEventListener('click', (e) => {
 
 AClose.addEventListener('click', () => {
     APop.style.display = "none";
+});
+
+// Pop up for lore
+
+const lore = document.getElementById("lore");
+const LPop = document.querySelector(".LPopup");
+const LClose = document.querySelector(".LClose");
+
+lore.addEventListener('click', () => {
+    LPop.style.display = "flex";
+});
+
+LPop.addEventListener('click', (e) => {
+    if (e.target === LPop){
+        LPop.style.display = "none";
+    }
+});
+
+LClose.addEventListener('click', () => {
+    LPop.style.display = "none";
 });
