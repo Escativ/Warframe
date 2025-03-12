@@ -1,0 +1,206 @@
+body{
+    margin: 0;
+}
+
+    /*Navbar*/
+
+.navbar{
+    background-color: black;
+    width: 100%;
+    height: 7vw;
+    display: flex;
+}
+.Navcont{
+    color: white;
+    font-size: 1.82vw;
+    margin-left: 3vw;
+    padding-top: 2.60vw;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    height: 39.55vw;
+    width: 100%;
+    position: relative;
+}
+
+.Vimg{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../Vorunaimg/Vorunapage.png);
+    height: 39.55vw;
+    width: 30vw;
+    position: absolute;
+}
+.container2{
+    background-color: aqua;
+    height: 39.55vw;
+    width: 70vw;
+    position: absolute;
+    margin-left: 30vw;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.abilities{
+    background-color: black;
+    border-radius: 15px;
+    cursor: pointer;
+    grid-column: 2;
+    grid-row: 2;
+}
+.Hab{
+    color: white;
+    font-size: 1.82vw;
+    padding-top: .5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    text-align: center;
+    cursor: pointer;
+}
+.building{
+    background-color: black;
+    border-radius: 15px;
+    cursor: pointer;
+    grid-column: 4;
+    grid-row: 2;
+}
+.Hbuil{
+    color: white;
+    font-size: 1.82vw;
+    padding-top: .5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    text-align: center;
+    cursor: pointer;
+}
+.About{
+    background-color: black;
+    border-radius: 15px;
+    cursor: pointer;
+    grid-column: 2;
+    grid-row: 4;
+}
+.Habout{
+    color: white;
+    font-size: 1.82vw;
+    padding-top: .5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+    /*Abilities Pop up*/
+
+.AbPopup{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.AbPopup-content{
+    background-color: black;
+    border-radius: 10px;
+    width: 80vw;
+    height: 40vw;
+    text-align: center;
+    position: relative;
+    border: 10px solid white;
+}
+.AbClose{
+    color: white;
+    font-size: 3vw;
+    position: absolute;
+    top: 1%;
+    left: 96%;
+    cursor: pointer;
+}
+
+    /*Building pop up*/
+
+.BuilPopup{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.BuilPopup-content{
+    background-color: black;
+    border-radius: 10px;
+    width: 80vw;
+    height: 40vw;
+    text-align: center;
+    position: relative;
+    border: 10px solid white;
+}
+.BuilClose{
+    color: white;
+    font-size: 3vw;
+    position: absolute;
+    top: 1%;
+    left: 96%;
+    cursor: pointer;
+}
+    
+    /*About pop up*/
+
+.APopup{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.APopup-content{
+    background-color: black;
+    border-radius: 10px;
+    width: 80vw;
+    height: 40vw;
+    text-align: center;
+    position: relative;
+    border: 10px solid white;
+}
+.AClose{
+    color: white;
+    font-size: 3vw;
+    position: absolute;
+    top: 1%;
+    left: 96%;
+    cursor: pointer;
+}
+
+    /*footer*/
+
+footer{
+    background-color: black;
+    width: 100%;
+    height: 7vw;
+    display: flex;
+}
+.footertext{
+    color: white;
+    font-size: 1.82vw;
+}
