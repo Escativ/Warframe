@@ -143,6 +143,204 @@ a{
     left: 96%;
     cursor: pointer;
 }
+.Abgif{
+    background-image: url(../Vorunaimg/Voruna.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 36vw;
+    width: 25vw;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+    /*Ability 1 stuff*/
+
+.Ab1st{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdA6drZLK2eLZ2jN4JAFAgDGeHfsOg1txv3Edc6fYy61JjR_kUqFm2Egtpt18RAQkr2Vg&usqp=CAU);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 10vw;
+    width: 10vw;
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    cursor: pointer;
+}
+.Ab1img{
+    opacity: 0;
+    visibility: hidden;
+    width: 1vw;
+    height: 1vw;
+}
+.Ab1cont{
+    opacity: 0;
+    color: white;
+}
+.active1{
+    background-color: black;
+    background-image: none;
+    width: 40vw;
+    height: 34vw;
+    border: 10px solid white;
+}
+.active1 .Ab1cont{
+    opacity: 1;
+}
+.active1 .Ab1img{
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    height: 7vw;
+    width: 7vw;
+}
+
+    /*Ability 2 stuff*/
+
+.Ab2st{
+    background-image: url(https://content.warframe.com/PublicExport/Lotus/Interface/Icons/Abilities/WerewolfBite.png!00_DBleTw6zbGqX+V0UvK9mzQ);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 10vw;
+    width: 10vw;
+    position: absolute;
+    top: 10%;
+    left: 75%;
+    cursor: pointer;
+}
+.Ab2img{
+    opacity: 0;
+    visibility: hidden;
+    width: 1vw;
+    height: 1vw;
+}
+.Ab2cont{
+    opacity: 0;
+    color: white;
+}
+.active2{
+    background-color: black;
+    background-image: none;
+    width: 40vw;
+    height: 34vw;
+    border: 10px solid white;
+    left: 45%;
+}
+.active2 .Ab2cont{
+    opacity: 1;
+}
+.active2 .Ab2img{
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    height: 7vw;
+    width: 7vw;
+}
+
+    /*Ability 3 stuff*/
+
+.Ab3st{
+    background-image: url(https://content.warframe.com/PublicExport/Lotus/Interface/Icons/Abilities/WerewolfLeap.png!00_1a3uw5qJw6vOFVdoMT2+Og);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 10vw;
+    width: 10vw;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    cursor: pointer;
+}
+.Ab3img{
+    opacity: 0;
+    visibility: hidden;
+    width: 1vw;
+    height: 1vw;
+}
+.Ab3cont{
+    opacity: 0;
+    color: white;
+}
+.active3{
+    background-color: black;
+    background-image: none;
+    width: 40vw;
+    height: 34vw;
+    border: 10px solid white;
+    top: 10%;
+}
+.active3 .Ab3cont{
+    opacity: 1;
+}
+.active3 .Ab3img{
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    height: 7vw;
+    width: 7vw;
+}
+
+    /*Ability 4 stuff*/
+
+.Ab4st{
+    background-image: url(https://content.warframe.com/PublicExport/Lotus/Interface/Icons/Abilities/WerewolfHowl.png!00_0qlXIAPIm3q6bi1MBgsYZw);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 10vw;
+    width: 10vw;
+    position: absolute;
+    top: 60%;
+    left: 75%;
+    cursor: pointer;
+}
+.Ab4img{
+    opacity: 0;
+    visibility: hidden;
+    width: 1vw;
+    height: 1vw;
+}
+.Ab4cont{
+    opacity: 0;
+    color: white;
+}
+.active4{
+    background-color: black;
+    background-image: none;
+    width: 40vw;
+    height: 34vw;
+    border: 10px solid white;
+    left: 45%;
+    top: 10%;
+}
+.active4 .Ab4cont{
+    opacity: 1;
+}
+.active4 .Ab4img{
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    height: 7vw;
+    width: 7vw;
+}
+
+    /*Hidden*/
+
+.hidden{
+    opacity: 0;
+    visibility: hidden;
+}
 
     /*Building pop up*/
 

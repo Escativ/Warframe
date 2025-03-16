@@ -77,3 +77,66 @@ LPop.addEventListener('click', (e) => {
 LClose.addEventListener('click', () => {
     LPop.style.display = "none";
 });
+
+//Voruna's Ab
+
+const Abgifs = ["../Vorunaimg/Voruna1st.gif", "../Vorunaimg/voruna2.png", "../Vorunaimg/voruna3.png"];
+const Abgif = document.querySelector(".Abgif");
+const Ab1st = document.querySelector(".Ab1st");
+const Ab2st = document.querySelector(".Ab2st");
+const Ab3st = document.querySelector(".Ab3st");
+const Ab4st = document.querySelector(".Ab4st");
+
+Ab1st.addEventListener('click', () => {
+    const ab1st = Ab1st.classList.toggle("active1");
+
+    if (ab1st){
+        Abgif.style.backgroundImage = `url('${Abgifs[0]}')`;
+    } else {
+        Abgif.style.backgroundImage = "url(../Vorunaimg/Voruna.png)"
+    }
+
+    Ab2st.classList.toggle("hidden");
+    Ab3st.classList.toggle("hidden");
+    Ab4st.classList.toggle("hidden");
+});
+Ab2st.addEventListener('click', () => {
+    const ab2st = Ab2st.classList.toggle("active2")
+
+    if (ab2st){  
+        Abgif.style.backgroundImage = `url('${Abgifs[1]}')`;
+    } else {
+        Abgif.style.backgroundImage = "url(../Vorunaimg/Voruna.png)"
+    }
+
+    Ab1st.classList.toggle("hidden");
+    Ab3st.classList.toggle("hidden");
+    Ab4st.classList.toggle("hidden");
+});
+Ab3st.addEventListener('click', () => {
+    const ab3st = Ab3st.classList.toggle("active3")
+
+    if (ab3st){  
+        Abgif.style.backgroundImage = `url('${Abgifs[2]}')`;
+    } else {
+        Abgif.style.backgroundImage = "url(../Vorunaimg/Voruna.png)"
+    }
+
+    Ab1st.classList.toggle("hidden");
+    Ab2st.classList.toggle("hidden");
+    Ab4st.classList.toggle("hidden");
+});
+Ab4st.addEventListener('click', () => {
+    const ab4st = Ab4st.classList.toggle("active4")
+
+    if (ab4st){  
+        Abgif.style.backgroundImage = `url('${Abgifs[2]}')`;
+    } else {
+        Abgif.style.backgroundImage = "url(../Vorunaimg/Voruna.png)"
+    }
+
+
+    Ab1st.classList.toggle("hidden");
+    Ab2st.classList.toggle("hidden");
+    Ab3st.classList.toggle("hidden");
+});
