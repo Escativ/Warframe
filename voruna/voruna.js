@@ -80,7 +80,7 @@ LClose.addEventListener('click', () => {
 
 //Voruna's Ab
 
-const Abgifs = ["../Vorunaimg/Voruna1st.gif", "../Vorunaimg/voruna2.png", "../Vorunaimg/voruna3.png"];
+const Abgifs = ["../Vorunaimg/Voruna1st.gif","../Vorunaimg/Voruna2nd.gif","../Vorunaimg/Voruna3rd.gif","../Vorunaimg/Voruna4th.gif",];
 const Abgif = document.querySelector(".Abgif");
 const Ab1st = document.querySelector(".Ab1st");
 const Ab2st = document.querySelector(".Ab2st");
@@ -130,7 +130,7 @@ Ab4st.addEventListener('click', () => {
     const ab4st = Ab4st.classList.toggle("active4")
 
     if (ab4st){  
-        Abgif.style.backgroundImage = `url('${Abgifs[2]}')`;
+        Abgif.style.backgroundImage = `url('${Abgifs[3]}')`;
     } else {
         Abgif.style.backgroundImage = "url(../Vorunaimg/Voruna.png)"
     }
