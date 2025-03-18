@@ -82,61 +82,82 @@ LClose.addEventListener('click', () => {
 
 const Abgifs = ["../Vorunaimg/Voruna1st.gif","../Vorunaimg/Voruna2nd.gif","../Vorunaimg/Voruna3rd.gif","../Vorunaimg/Voruna4th.gif",];
 const Abgif = document.querySelector(".Abgif");
-const Ab1st = document.querySelector(".Ab1st");
-const Ab2st = document.querySelector(".Ab2st");
-const Ab3st = document.querySelector(".Ab3st");
-const Ab4st = document.querySelector(".Ab4st");
+const Ab1st = document.querySelector(".Ab1img");
+const Ab2st = document.querySelector(".Ab2img");
+const Ab3st = document.querySelector(".Ab3img");
+const Ab4st = document.querySelector(".Ab4img");
+const ab1st = document.querySelector(".Ab1st");
+const ab2st = document.querySelector(".Ab2st");
+const ab3st = document.querySelector(".Ab3st");
+const ab4st = document.querySelector(".Ab4st");
+const AbClose1 = document.querySelector(".AbClose1")
+
+function closeAll() {
+    ab1st.classList.remove("active1");
+    ab2st.classList.remove("active2");
+    ab3st.classList.remove("active3");
+    ab4st.classList.remove("active4");
+
+    ab1st.classList.remove("hidden");
+    ab2st.classList.remove("hidden");
+    ab3st.classList.remove("hidden");
+    ab4st.classList.remove("hidden");
+
+    Abgif.style.backgroundImage = "url(../Vorunaimg/Voruna.png)";
+}
+
+AbClose1.addEventListener('click', () => {
+    closeAll();
+});
 
 Ab1st.addEventListener('click', () => {
-    const ab1st = Ab1st.classList.toggle("active1");
+    ab1st.classList.toggle("active1");
 
-    if (ab1st){
+    if (ab1st.classList.contains("active1")) {
         Abgif.style.backgroundImage = `url('${Abgifs[0]}')`;
+        ab2st.classList.add("hidden");
+        ab3st.classList.add("hidden");
+        ab4st.classList.add("hidden");
     } else {
-        Abgif.style.backgroundImage = "url(../Vorunaimg/Voruna.png)"
+        closeAll();
     }
-
-    Ab2st.classList.toggle("hidden");
-    Ab3st.classList.toggle("hidden");
-    Ab4st.classList.toggle("hidden");
 });
+
 Ab2st.addEventListener('click', () => {
-    const ab2st = Ab2st.classList.toggle("active2")
+    ab2st.classList.toggle("active2");
 
-    if (ab2st){  
+    if (ab2st.classList.contains("active2")) {
         Abgif.style.backgroundImage = `url('${Abgifs[1]}')`;
+        ab1st.classList.add("hidden");
+        ab3st.classList.add("hidden");
+        ab4st.classList.add("hidden");
     } else {
-        Abgif.style.backgroundImage = "url(../Vorunaimg/Voruna.png)"
+        closeAll();
     }
-
-    Ab1st.classList.toggle("hidden");
-    Ab3st.classList.toggle("hidden");
-    Ab4st.classList.toggle("hidden");
 });
+
 Ab3st.addEventListener('click', () => {
-    const ab3st = Ab3st.classList.toggle("active3")
+    ab3st.classList.toggle("active3");
 
-    if (ab3st){  
+    if (ab3st.classList.contains("active3")) {
         Abgif.style.backgroundImage = `url('${Abgifs[2]}')`;
+        ab1st.classList.add("hidden");
+        ab2st.classList.add("hidden");
+        ab4st.classList.add("hidden");
     } else {
-        Abgif.style.backgroundImage = "url(../Vorunaimg/Voruna.png)"
+        closeAll();
     }
-
-    Ab1st.classList.toggle("hidden");
-    Ab2st.classList.toggle("hidden");
-    Ab4st.classList.toggle("hidden");
 });
+
 Ab4st.addEventListener('click', () => {
-    const ab4st = Ab4st.classList.toggle("active4")
+    ab4st.classList.toggle("active4");
 
-    if (ab4st){  
+    if (ab4st.classList.contains("active4")) {
         Abgif.style.backgroundImage = `url('${Abgifs[3]}')`;
+        ab1st.classList.add("hidden");
+        ab2st.classList.add("hidden");
+        ab3st.classList.add("hidden");
     } else {
-        Abgif.style.backgroundImage = "url(../Vorunaimg/Voruna.png)"
+        closeAll();
     }
-
-
-    Ab1st.classList.toggle("hidden");
-    Ab2st.classList.toggle("hidden");
-    Ab3st.classList.toggle("hidden");
 });
